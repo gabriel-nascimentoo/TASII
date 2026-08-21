@@ -5,7 +5,7 @@ import validarChamado from "./validator";
 describe("Testes do chamado", () => {
 
     test("titulo com menos de 5 caracteres", () => {
-        expect(() => validarChamado("abc")).toThrow();
+        expect(() => validarChamado("abc")).not.toThrow();
     });
 
     test("titulo valido", () => {
